@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<p id="totalpriceofrice"></p>
+<p id="totalpriceofsugar"></p>
+<p id="totalpriceofwheat"></p>
+<br>
+<p id="total"></p>
+<br>
+<p id="nwtotal"></p>
+
+    <script>
+
+        let priceofrice=100;
+        let priceofwheat=200;
+        let priceofsugar=150;
+        let qofrice=5;
+        let qofwheat=10;
+        let qofsugar=2;
+
+
+        document.getElementById("totalpriceofrice").innerHTML=priceofrice*qofrice +` is the total price of rice `;
+        console.log(priceofrice*qofrice +` is the total price of rice `);
+        document.getElementById("totalpriceofsugar").innerHTML=priceofsugar*qofsugar+` is the total price of sugar`;
+        console.log(priceofsugar*qofsugar+` is the total price of sugar`);
+        document.getElementById("totalpriceofwheat").innerHTML=priceofwheat*qofwheat+' is the price of wheat';
+        console.log(priceofwheat*qofwheat+' is the price of wheat');
+        
+        document.getElementById("total").innerHTML=priceofrice*qofrice +priceofsugar*qofsugar+priceofwheat*qofwheat+` is the total amount`;
+        console.log(priceofrice*qofrice +priceofsugar*qofsugar+priceofwheat*qofwheat+` is the total amount`);
+        
+        let updateqofrice=10;
+
+        document.getElementById("nwtotal").innerHTML=priceofrice*updateqofrice+qofsugar*priceofsugar+qofwheat*priceofwheat+" is the updated amount";
+        console.log(priceofrice*updateqofrice+qofsugar*priceofsugar+qofwheat*priceofwheat+" is the updated amount");
+    </script>
+    
+</body>
+</html>
