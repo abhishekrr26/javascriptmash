@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        book={
+            title:'The Alchemist',
+            author:'Paulo Coelho',
+            year:1988,
+            getsummary:function(){
+                return 'The Book '+book.title+' was written by '+this.author+' in '+this.year;
+            }
+        }
+
+function printbooksummary(a){
+    console.log(a.getsummary());
+    }
+    printbooksummary(book);
+
+
+
+    </script>
+</body>
+</html>
