@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="er"></p>
+
+
+    <script>
+        let userprofile={
+            username:` CoolUser99`,
+            bio:`I LOVE coding! JavaScript is Great!!!`,
+            len:0,
+            cl:function(){
+            this.username=this.username.trim().toLowerCase();
+            this.bio=this.bio.trim().toLowerCase();
+            this.bio=this.bio.replace("javascript","JS");
+            this.len=this.bio.length;
+            }
+        }
+    userprofile.cl();
+
+    let newuser={
+        username:userprofile.username,
+        bio:userprofile.bio,
+        len:userprofile.len,
+
+        dis:function(){
+            document.getElementById('er').innerHTML=` username- ${this.username}<br>new bio- ${this.bio} <br> the length of bio is ${this.len}`;
+        }
+
+    }
+    newuser.dis();
+
+        
+    </script>
+    
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input  id="feedback">
+    <br>
+    <button onclick="run()">Submit</button>
+    <p id="feed"></p>
+
+
+
+    <script>
+
+        function run(){
+      note=document.getElementById('feedback').value;
+      note=note.trim().toLowerCase();
+      note=note.replace("food","ambience");
+      position=note.indexOf("service");
+      a=note.split(" ");      
+      document.getElementById('feed').innerHTML=`${note} <br> the position of the service is${position} <br>the converted array is<br>[${a}]`;
+        }
+
+
+
+
+    </script>
+</body>
+</html>
